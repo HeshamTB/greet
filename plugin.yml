@@ -1,0 +1,18 @@
+name: greet
+version: 0.3
+main: i.hesh.greet.commands
+author: Don
+
+commands:
+ opcheck:
+  usage: /<command>
+  description: Check op status.
+ count:
+  usage: /<command>
+  description: returns online player list.
+ kit1:
+  usage: /<command>
+  description: Basic survival kit.
+ setspwan:
+  usage: /<command>
+  description: sets your current location as bed spwan.
