@@ -30,7 +30,7 @@ public class events implements Listener {
 		
 		p.sendMessage(ChatColor.AQUA +"Type"+ ChatColor.GREEN +" (/help greet) "+ ChatColor.AQUA+ "for list of new commands");
 	}
-	
+	//master 
 	@EventHandler
 	public void Quit(PlayerQuitEvent e ) {
 		Player p = e.getPlayer();
