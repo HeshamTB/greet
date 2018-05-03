@@ -31,8 +31,6 @@ public class commands extends JavaPlugin  {
 			
 			String pName = p.getDisplayName();
 			p.sendMessage(greetprefix + ChatColor.AQUA + "Hello " + pName+"! "  );
-			
-			
 			if (p.isOp()) {
 				p.sendMessage(greetprefix+ChatColor.GREEN +"You are an Operator");
 				//p.giveExp(5);								
@@ -40,25 +38,19 @@ public class commands extends JavaPlugin  {
 			else {
 			
 				p.sendMessage(greetprefix + ChatColor.GREEN +"You are not an Operator");
-			}
-			
-			
+			}	
 		}
 		if(cmd.getName().equalsIgnoreCase("count")) {
-			//p.sendMessage(hesh());
-			
+	
 			int i = 1;
 			p.sendMessage(greetprefix + ChatColor.GRAY + "Online Players :");
+			
 			for(Player player : Bukkit.getOnlinePlayers()) {
 				
 				p.sendMessage(ChatColor.RED + "" + i + "- " + player.getName());
 				i++;
-			}
-			
-			
-						
-		}				
-		
+			}					
+		}					
 		if(cmd.getName().equalsIgnoreCase("kit1") && p.isOp()) {
 		   
 	    	p.getInventory().addItem(new ItemStack(Material.STONE_PICKAXE));
@@ -73,6 +65,4 @@ public class commands extends JavaPlugin  {
 		}*/ //failed to respwan (bed obstructed) 
 		return true;		
 		}				
-	
-	
 } 
