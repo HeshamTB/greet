@@ -2,6 +2,7 @@ package i.hesh.greet;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.block.Bed;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -38,9 +39,9 @@ public class events implements Listener {
 	
 	public void player(PlayerBedEnterEvent e) { //Changed TRY! 
 		Player p = e.getPlayer();
-		p.sendMessage("aaaaaaaaaaa");
 		Bukkit.getWorld("world").setFullTime(1);
-		Bukkit.getConsoleSender().sendMessage(prefix +"Good Morning!");
+		p.sendMessage(prefix+" Good Morning!");
+		
 	}
 
 }
