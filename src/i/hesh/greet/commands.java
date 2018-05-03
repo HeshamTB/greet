@@ -26,6 +26,7 @@ public class commands extends JavaPlugin  {
 		String greetprefix = ChatColor.AQUA + "[" + ChatColor.BLUE + "greet" + ChatColor.AQUA + "] "; //[ greet ]
 		Player p = (Player) sender;
 		
+		//use sender class
 		if(cmd.getName().equalsIgnoreCase("opcheck")) {
 			
 			String pName = p.getDisplayName();
