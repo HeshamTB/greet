@@ -23,10 +23,10 @@ public class commands extends JavaPlugin  {
 	
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandlabel, String[] args) {
+		
 		String greetprefix = ChatColor.AQUA + "[" + ChatColor.BLUE + "greet" + ChatColor.AQUA + "] "; //[ greet ]
 		Player p = (Player) sender;
 		
-		//use sender class
 		if(cmd.getName().equalsIgnoreCase("opcheck")) {
 			
 			String pName = p.getDisplayName();
