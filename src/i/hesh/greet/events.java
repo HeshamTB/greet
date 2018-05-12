@@ -47,9 +47,11 @@ public class events implements Listener {
 	@EventHandler
 	public void player(PlayerBedLeaveEvent e) {
 		
+		if (commands.IsBedEvent) {
 		p = e.getPlayer();
 		Bukkit.getWorld("world").setFullTime(1);
-		p.sendMessage(PREFIX+" Good Morning!");	
+		p.sendMessage(PREFIX+" Good Morning!");
+		}
 
 	}
 	@EventHandler
