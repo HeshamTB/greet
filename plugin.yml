@@ -16,3 +16,6 @@ commands:
  setspwan:
   usage: /<command>
   description: sets your current location as bed spwan.
+ beds:
+  usage: /<command>
+  description: enable or disable bed feature.
